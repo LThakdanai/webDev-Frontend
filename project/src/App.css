@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: clamp(14rem, 16vw, 20rem);
+  height: 100vh;
+  background-color: #171d2d;
+  color: white;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
+.sidebar h1 {
+  font-size: clamp(1.8rem, 2vw, 2.5rem);
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  color: white;
+}
+
+.sidebar hr {
+  border: none;
+  border-top: 2px solid #cbd5e1;
+  margin: 1rem 0;
+}
+
+.sidebar .mode {
+  font-size: clamp(0.75rem, 0.9vw, 0.9rem);
+  font-weight: 500;
+  color: #cbd5e1;
+  margin-bottom: 1rem;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.sidebar button,
+.sidebar a {
+  text-align: left;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: clamp(0.9rem, 1vw, 1.1rem);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background 0.2s;
+}
+
+.sidebar button:hover,
+.sidebar a:hover {
+  background-color: #2d3748;
+}
+
+.sidebar .active {
+  background-color: #4b5563;
+}
+
+.sidebar .bottom-links {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* ------ Header ------ */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px clamp(1rem, 2vw, 3rem); /* Responsive padding */
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+  
+  header h1 {
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    font-weight: bold;
+    margin: 0;
+    color: #1a1a1a;
+  }
+  
+  header .flex {
+    display: flex;
+    align-items: center;
+    gap: clamp(0.75rem, 1vw, 1.5rem);
+  }
+  
+  header .avatar {
+    width:
+  }  
